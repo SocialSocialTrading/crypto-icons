@@ -6,7 +6,10 @@
     "url": "https://github.com/assc-ryan/crypto-icons.git",
     "type": "git"
   },
-  "author": "assc-ryan <112598768+assc-ryan@users.noreply.github.com>",
+  "author": "Anti Capital",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
 }
