@@ -1,3 +1,2 @@
-const inj = "./public/assets/inj.png";
+export const inj: string = "./public/assets/inj.png";
 
-module.exports = { inj };
