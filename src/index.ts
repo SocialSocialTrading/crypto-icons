@@ -1,15 +1,10 @@
-export const Inj = require("./images/inj.png");
+const BASE_URL = "https://raw.githubusercontent.com/SocialSocialTrading/crypto-icons/master/src/images";
 
-// import Inj from "./images/inj.png";
-
-// export default {
-//   Inj
-// }
-
-export function catsSay(): string {
-  return 'Meow';
-}
-
-export default function catsAreAwesome(): string {
-  return `Cats say: ${catsSay()}`;
+export default function getTokenImgUrl(token: string): string {
+  switch (token) {
+    case "inj":
+      return `${BASE_URL}/${token}.jpg`;
+    default:
+      return "";
+  }
 }
