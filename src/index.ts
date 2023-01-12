@@ -1,2 +1,5 @@
-export const inj: string = "./public/assets/inj.png";
+const Inj = require("./images/inj.png");
 
+export default {
+  Inj
+}
