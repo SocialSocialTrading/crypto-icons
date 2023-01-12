@@ -1,4 +1,6 @@
-// const Inj = require("./images/inj.png");
+export const Inj = require("./images/inj.png");
+
+// import Inj from "./images/inj.png";
 
 // export default {
 //   Inj
