@@ -8,15 +8,11 @@ export function sayMessage() {
   console.log(getMessage())
 }
 
-function getTokenImgUrl(token: string): string {
+export function getTokenImgUrl(token: string): string {
   switch (token) {
     case "inj":
       return `${BASE_URL}/${token}.jpg`;
     default:
       return "";
   }
-}
-
-export default {
-  getTokenImgUrl
 }
