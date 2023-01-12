@@ -8,7 +8,9 @@
     "src"
   ],
   "scripts": {
-    "build": "tsc --module commonjs"
+    "build": "tsc --module commonjs",
+    "preversion": "yarn run build",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "url": "https://github.com/assc-ryan/crypto-icons.git",
