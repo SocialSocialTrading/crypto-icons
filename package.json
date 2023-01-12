@@ -1,15 +1,22 @@
 {
   "name": "crypto-icons",
   "version": "1.0.0",
-  "main": "index.ts",
+  "description": "",
+  "main": "src/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc --module commonjs"
+  },
   "repository": {
     "url": "https://github.com/assc-ryan/crypto-icons.git",
     "type": "git"
   },
   "author": "Anti Capital",
   "license": "MIT",
-  "private": false,
   "devDependencies": {
-    "@types/node": "^18.11.18"
+    "typescript": "4.9.4"
   }
 }
