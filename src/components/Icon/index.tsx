@@ -16,7 +16,9 @@ const Icon: FC<IIconProp> = ({ name }) => {
   return (
     <img
       src={getImageUrl(name)}
-      onError={({ currentTarget }) => currentTarget.classList.add("hidden")}
+      onError={({ currentTarget }) => {
+        currentTarget.style.display = "none";
+      }}
     />
   );
 };
