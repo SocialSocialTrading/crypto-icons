@@ -13,7 +13,12 @@ const Icon: FC<IIconProp> = ({ name }) => {
       import.meta.url
     ).href;
   };
-  return <img src={getImageUrl(name)} />;
+  return (
+    <img
+      src={getImageUrl(name)}
+      onError={({ currentTarget }) => currentTarget.classList.add("hidden")}
+    />
+  );
 };
 
 export default Icon;
