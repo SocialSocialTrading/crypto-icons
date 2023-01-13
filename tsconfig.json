@@ -1,14 +1,21 @@
 {
-  "include": [
-    "src"
-  ],
   "compilerOptions": {
-    "target": "es2018",
-    "moduleResolution": "node", // don't have to import actual filenames, can import extensionless files
-    "declaration": true, // generate .d.ts files
-    "sourceMap": true, // generate source map
-    "outDir": "dist", // output compiled js, d.ts, and source map to dist folder
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "esModuleInterop": true
-  }
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
