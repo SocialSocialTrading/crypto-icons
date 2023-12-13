@@ -294,7 +294,18 @@ import mina from "@/assets/images/mina.png";
 import rbn from "@/assets/images/rbn.png";
 import ult from "@/assets/images/ult.png";
 
+import sui from "@/assets/images/sui.png";
+import orai from "@/assets/images/orai.png";
+import pyth from "@/assets/images/pyth.png";
+import idex from "@/assets/images/idex.png";
+import tia from "@/assets/images/tia.png";
+
 export default {
+  sui,
+  orai,
+  pyth,
+  idex,
+  tia,
   // "10set",
   btg,
   ecoin,
